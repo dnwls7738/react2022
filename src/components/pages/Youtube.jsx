@@ -16,7 +16,6 @@ function Youtube(){
                 <YouTubeCont />
                 <Contact />
             </Contents>
-            <Footer />
         </>
     )
 }
