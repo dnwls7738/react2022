@@ -29,3 +29,9 @@
         }
     }
 }
+
+// 포트폴리오 애니메이션
+.portfolio__inner {
+    opacity: 0;
+    transform: translateX(100px) translateY(100px);
+}
