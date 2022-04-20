@@ -1,8 +1,8 @@
 import React from 'react'
 
-function ReFerCont(){
+function ReFerCont(props){
     return (
-        <section className="refer__cont">
+        <section className={`refer__cont ${props.color}`}>
       <div className="container">
         <div className="refer__inner">
           <h2>CSS</h2>
