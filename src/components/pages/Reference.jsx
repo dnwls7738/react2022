@@ -67,7 +67,7 @@ class Reference extends React.Component {
         }, 10)
     }
     getPorts = async () => {
-        const {data: {data : {ports}}} = await axios.get("https://webstoryboy.github.io/dothome1/portfolio.json");
+        const {data: {data : {ports}}} = await axios.get("https://dnwls7738.github.io/react2022/src/assets/json/reference.json");
         
         this.setState({ports : ports});
         
