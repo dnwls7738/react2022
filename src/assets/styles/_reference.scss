@@ -20,3 +20,19 @@
         }
     }
 }
+
+.refer__inner{
+    opacity: 0;
+}
+
+.refer__cont.light {
+    background-color: var(--light_bg);
+    .refer__inner {
+        h2{
+            color: var(--black);
+        }
+        table{
+            color: var(--black);
+        }
+    }
+}
