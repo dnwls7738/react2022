@@ -4,7 +4,7 @@ import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
 import Title from "../layout/Title";
 import ContContact  from "../layout/Contact";
-import ReferCont from "../includes/ReferCont";
+import ReFerCont from "../includes/ReFerCont";
 import Loading from "../basics/Loading";
 import { gsap } from "gsap";
 import axios from "axios";
@@ -89,7 +89,7 @@ class Reference extends React.Component {
                         <Header color="light" />
                         <Contents>
                             <Title title={["Reference","book"]} color="light" />
-                            <ReferCont refer={refers} color="light" />
+                            <ReFerCont refer={refers} color="light" />
                             <ContContact />
                         </Contents>
                         <Footer color="light" />
