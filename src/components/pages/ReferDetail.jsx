@@ -24,6 +24,7 @@ class ReferDetail extends React.Component {
             delay: 0.6,
         });
     }
+    
     render(){
         return (
             <>
