@@ -29,34 +29,38 @@ class Reference extends React.Component {
     mainAnimation = () => {
         setTimeout(() => {
             gsap.to("#header", {
-                duration: 0.8,
+                duration:1.5,
                 top: 0,
+                ease: "expo",
             });
             gsap.to("#footer", {
-                duration: 0.8,
+                duration:1.5,
                 bottom: 0,
-                delay: 0.2,
+                ease: "expo"
             });
             gsap.to(".cont__title strong", {
-                duration: 0.7,
-                y: 0,
-                opacity: 1,
-                delay: 1.0,
-                ease: "power4.out"
+                duration:2.5,
+                x : 0,
+                y : 0,
+                opacity : 1,
+                ease: "expo",
+                delay : 1.5
             });
             gsap.to(".cont__title em", {
-                duration: 0.7,
-                y: 0,
-                opacity: 1,
-                delay: 1.3,
-                ease: "power4.out"
+                duration:2.5,
+                x : 0,
+                y : 0,
+                opacity : 1,
+                ease: "expo",
+                delay : 2.0
             });
             gsap.to(".refer__inner", {
-                duration: 0.7,
-                y: 0,
-                opacity: 1,
-                delay: 1.5,
-                ease: "power4.out"
+                duration:2.5,
+                x : 0,
+                y : 0,
+                opacity : 1,
+                ease: "expo",
+                delay : 2.5
             });
         }, 10)
     }
