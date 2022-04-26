@@ -1,4 +1,5 @@
-.youtube__list {
+
+.movie__list {
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -13,7 +14,7 @@
         }
     }
 }
-.youtube__search {
+.movie__search {
     position: relative;
 
     h2 {
@@ -57,7 +58,7 @@
 }
 
 @media (max-width:1000px) {
-    .youtube__list{
+    .movie__list{
         ul {
 
             li {
@@ -79,7 +80,7 @@
     }
 }
 @media (max-width:600px) {
-    .youtube__list{
+    .movie__list{
         ul {
 
             li {
