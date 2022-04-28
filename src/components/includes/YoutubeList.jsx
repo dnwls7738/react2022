@@ -1,15 +1,17 @@
-import React from 'react'
-import YoutubeItem from './YoutubeItem';
+import React from "react";
+import YoutubeItem from "./YoutubeItem";
+
 function YoutubeList(props) {
-    //console.log(props)
+  //console.log(props)
   return (
-    <div className='youtube__list'>
+    <div className="youtube__list">
       <ul>
-          {/* {props.videos.map((video,index)=>(
-              <YoutubeItem key={index} video={video} />
-          ))} */}
+        {props.videos.map((video, index) => (
+          <YoutubeItem key={index} video={video} />
+        ))}
       </ul>
     </div>
-  )
+  );
 }
-export default YoutubeList
+
+export default YoutubeList;

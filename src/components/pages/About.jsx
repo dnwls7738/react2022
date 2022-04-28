@@ -22,11 +22,6 @@ class About extends React.Component {
                 ease: "expo",
 
             });
-            gsap.to("#footer", {
-                duration:1.5,
-                bottom: 0,
-                ease: "expo"
-            });
             gsap.to(".cont__title strong", {
                 duration:2.5,
                 x : 0,
