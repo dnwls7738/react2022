@@ -90,7 +90,7 @@
     display: none;
   }
   .burger-icon .burger-sticks {
-    display: block;
+    top: 50px;
   }
 }
 
@@ -130,7 +130,7 @@
   position: absolute;
   z-index: 2;
   padding: 8px 0;
-  top: 25px;
+  top: -25px;
   right: 10px;
   user-select: none;
   width: auto;
