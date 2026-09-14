@@ -100,3 +100,12 @@ REACT_APP_API=YOUTUBE_API_KEY
 - `npm.cmd test`: 테스트 파일 1개, 테스트 1개 통과
 - `npm.cmd run build`: 프로덕션 빌드 성공
 - 빌드 중 Sass `@import` 문법의 향후 제거 예정 경고가 발생했지만 빌드는 정상 완료되었습니다.
+
+### 2026-09-14 추가 현대화
+
+- Create React App을 제거하고 Vite 8 기반으로 전환했습니다.
+- React 19, React Router 7, Vitest 및 최신 Testing Library로 업그레이드했습니다.
+- `npm test`: 테스트 파일 1개, 테스트 1개 통과
+- `npm run build`: Vite 프로덕션 빌드 성공
+- `npm audit --audit-level=high`: 고위험 취약점 0개
+- Sass `@import` 문법은 Dart Sass 3.0에서 제거될 예정이므로 추후 `@use`/`@forward`로 전환해야 합니다.
