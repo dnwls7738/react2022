@@ -38,6 +38,23 @@ npm run build
 npm run preview
 ```
 
+## GitHub Pages 배포
+
+`master` 브랜치에 push하면 GitHub Actions가 자동으로 빌드하고 Pages에 배포합니다.
+
+저장소 설정에서 `Settings > Pages > Build and deployment > Source`를 `GitHub Actions`로 선택해야 합니다. 배포 주소는 다음과 같습니다.
+
+`https://dnwls7738.github.io/react2022/`
+
+영화 및 YouTube API를 사용하려면 저장소의 `Settings > Secrets and variables > Actions`에 다음 Secrets를 추가합니다.
+
+```text
+VITE_MOVIE_API
+VITE_YOUTUBE_API
+```
+
+Vite 환경 변수는 브라우저에 포함되므로 API 키는 완전한 비밀 값이 아닙니다. TMDB와 YouTube 콘솔에서 도메인, 사용량, API 권한을 제한해야 합니다.
+
 ## 주요 명령
 
 | 명령 | 설명 |
@@ -82,11 +99,11 @@ src/
 영화와 YouTube 화면은 외부 API를 사용합니다. 로컬 환경에서는 `.env.local` 파일에 다음 값을 설정해야 합니다.
 
 ```env
-REACT_APP_MOVIE_API=TMDB_API_KEY
-REACT_APP_API=YOUTUBE_API_KEY
+VITE_MOVIE_API=TMDB_API_KEY
+VITE_YOUTUBE_API=YOUTUBE_API_KEY
 ```
 
-현재 소스는 위 값을 `process.env`에서 읽습니다. Vite의 기본 환경 변수 규칙은 `VITE_*` 및 `import.meta.env`이므로, API 기능이 동작하지 않으면 환경 변수 접근 방식과 Vite 설정을 함께 확인해야 합니다. API 키는 저장소에 커밋하지 않습니다.
+현재 소스는 위 값을 `import.meta.env`에서 읽습니다. API 키는 저장소에 커밋하지 않습니다.
 
 외부 API를 사용하는 기능은 API 키, 네트워크 연결, CORS 정책, API 사용량 제한에 따라 실행 결과가 달라질 수 있습니다.
 
@@ -109,3 +126,12 @@ REACT_APP_API=YOUTUBE_API_KEY
 - `npm run build`: Vite 프로덕션 빌드 성공
 - `npm audit --audit-level=high`: 고위험 취약점 0개
 - Sass `@import` 문법은 Dart Sass 3.0에서 제거될 예정이므로 추후 `@use`/`@forward`로 전환해야 합니다.
+
+### 2026-09-14 GitHub Pages 설정
+
+- 저장소 하위 경로 `/react2022/`에 맞춰 Vite `base`를 설정했습니다.
+- GitHub Pages 정적 호스팅에 맞춰 `HashRouter`를 사용하도록 변경했습니다.
+- `master` push 시 GitHub Actions가 Vite 빌드 결과를 Pages에 배포하도록 추가했습니다.
+- 영화 및 YouTube API 환경 변수를 `VITE_MOVIE_API`, `VITE_YOUTUBE_API`로 통일했습니다.
+- `npm test`: 테스트 파일 1개, 테스트 1개 통과
+- `npm run build`: Pages용 프로덕션 빌드 성공

@@ -66,7 +66,7 @@ function Movie() {
             redirect: 'follow'
           };
           
-          fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_MOVIE_API}&query=${query}`, requestOptions)
+          fetch(`https://api.themoviedb.org/3/search/movie?api_key=${import.meta.env.VITE_MOVIE_API}&query=${query}`, requestOptions)
           .then(response => response.json())
           .then(result => setVideos(result.results))
           .catch(error => console.log('error', error));
@@ -78,7 +78,7 @@ function Movie() {
             redirect: 'follow'
           };
           
-          fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_MOVIE_API}&query=Jack`, requestOptions)
+          fetch(`https://api.themoviedb.org/3/search/movie?api_key=${import.meta.env.VITE_MOVIE_API}&query=Jack`, requestOptions)
           .then(response => response.json())
           .then(result => {
               setVideos(result.results)
