@@ -135,3 +135,10 @@ VITE_YOUTUBE_API=YOUTUBE_API_KEY
 - 영화 및 YouTube API 환경 변수를 `VITE_MOVIE_API`, `VITE_YOUTUBE_API`로 통일했습니다.
 - `npm test`: 테스트 파일 1개, 테스트 1개 통과
 - `npm run build`: Pages용 프로덕션 빌드 성공
+
+### 2026-09-14 GitHub Pages 흰 화면 수정
+
+- 로컬 개발 환경에서도 Pages 경로(`/react2022/`)를 사용해 정적 파일을 찾던 문제를 수정했습니다.
+- GitHub Actions 빌드에서만 `/react2022/` base 경로를 사용하고, 로컬에서는 `/`를 사용하도록 분리했습니다.
+- `npm test`: 테스트 파일 1개, 테스트 1개 통과
+- 로컬 빌드와 GitHub Pages 경로 빌드 모두 성공했습니다.
