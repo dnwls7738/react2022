@@ -1,4 +1,5 @@
 import React from 'react'
+// 공통 문의 링크 영역을 페이지 레이아웃에 배치합니다.
 
 function Contact() {
   return (

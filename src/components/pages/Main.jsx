@@ -1,4 +1,5 @@
 import React from 'react';
+// 메인 페이지의 로딩 상태와 GSAP 등장 애니메이션을 관리합니다.
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import Contents from '../layout/Contents';

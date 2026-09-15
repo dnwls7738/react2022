@@ -1,4 +1,5 @@
 import React from 'react';
+// 이메일과 소셜 링크를 포함한 공통 푸터입니다.
 
 function Footer(props){
     return(

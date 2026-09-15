@@ -1,4 +1,5 @@
 import React, {useRef} from 'react'
+// 영화 검색어 입력을 받고 검색 콜백을 실행합니다.
 
 function MovieSearch({ onSearch }) {
 

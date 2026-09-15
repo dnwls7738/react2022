@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// YouTube 검색 API와 영상 결과 화면을 연결합니다.
 import Header from "../layout/Header";
 import Contents from "../layout/Contents";
 import Title from "../layout/Title";

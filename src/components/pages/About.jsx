@@ -1,4 +1,5 @@
 import React from 'react';
+// 소개 페이지의 로딩, 콘텐츠, 공통 레이아웃을 조합합니다.
 import Header from '../layout/Header';
 import Contents from '../layout/Contents';
 import Title from '../layout/Title';

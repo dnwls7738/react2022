@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+// TMDB 영화 검색 API와 영화 결과 화면을 연결합니다.
 import Header from '../layout/Header';
 import Contents from '../layout/Contents';
 import Title from '../layout/Title';

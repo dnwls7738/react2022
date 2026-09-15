@@ -1,4 +1,5 @@
 import React from 'react';
+// 레퍼런스 항목을 상세 페이지로 연결하는 목록을 구성합니다.
 import propType from 'prop-types';
 import { Link } from 'react-router-dom'
 

@@ -1,4 +1,5 @@
 import React from 'react'
+// 각 페이지 상단의 제목과 장식 요소를 표시합니다.
 
 function Title(props) {
   return (

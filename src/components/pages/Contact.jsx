@@ -1,4 +1,5 @@
 import React from "react";
+// 문의 페이지의 로딩과 연락처 콘텐츠를 조합합니다.
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import Contents from "../layout/Contents";

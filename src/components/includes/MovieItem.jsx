@@ -1,4 +1,5 @@
 import React from 'react'
+// 영화 검색 결과 한 건을 카드 형태로 표시합니다.
 
 function MovieItem(props) {
   return (

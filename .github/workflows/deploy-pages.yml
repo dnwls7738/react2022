@@ -1,3 +1,4 @@
+# master 변경 시 Vite 결과물을 GitHub Pages에 배포합니다.
 name: Deploy to GitHub Pages
 
 on:

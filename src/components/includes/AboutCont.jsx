@@ -1,4 +1,5 @@
 import React from 'react'
+// 소개 페이지에 표시할 자기소개 콘텐츠를 구성합니다.
 
 
 const aboutText = [

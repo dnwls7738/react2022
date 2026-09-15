@@ -1,4 +1,5 @@
 import React from 'react';
+// 애플리케이션의 전체 라우트와 페이지 연결을 관리합니다.
 import {HashRouter as Router, Routes, Route} from "react-router-dom";
 import Main from "./components/pages/Main"
 import About from "./components/pages/About"

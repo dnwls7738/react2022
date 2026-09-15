@@ -1,4 +1,5 @@
 import React from 'react'
+// 문의 페이지에 표시할 연락처 콘텐츠를 구성합니다.
 
 function ContactCont() {
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+// 포트폴리오 데이터와 화면 콘텐츠를 조합합니다.
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import Contents from '../layout/Contents';

@@ -1,4 +1,5 @@
 import React from "react";
+// 레퍼런스 목록 데이터를 읽고 목록 화면을 구성합니다.
 import Header from "../layout/Header";
 import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";

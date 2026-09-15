@@ -1,4 +1,5 @@
 import React from 'react'
+// 포트폴리오 JSON 데이터를 목록 화면으로 변환합니다.
 
 
 function PortInfo({id,title,image,link,category}){

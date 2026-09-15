@@ -1,4 +1,5 @@
 import React from 'react'
+// 페이지 전환이나 데이터 요청 중 표시하는 공통 로딩 화면입니다.
 
 function Loading(props) {
   return (

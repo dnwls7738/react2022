@@ -1,4 +1,5 @@
 import React from "react";
+// YouTube 검색 결과 한 건을 영상 카드로 표시합니다.
 function YoutubeItem(props) {
   return (
     <li>

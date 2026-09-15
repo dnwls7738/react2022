@@ -1,4 +1,5 @@
 import React from 'react'
+// 선택한 레퍼런스의 상세 콘텐츠를 표시합니다.
 import Header from "../layout/Header";
 import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";

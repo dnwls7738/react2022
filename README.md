@@ -142,3 +142,11 @@ VITE_YOUTUBE_API=YOUTUBE_API_KEY
 - GitHub Actions 빌드에서만 `/react2022/` base 경로를 사용하고, 로컬에서는 `/`를 사용하도록 분리했습니다.
 - `npm test`: 테스트 파일 1개, 테스트 1개 통과
 - 로컬 빌드와 GitHub Pages 경로 빌드 모두 성공했습니다.
+
+### 2026-09-15 전체 소스 주석 정리
+
+- React 진입점, 페이지, 레이아웃, 재사용 컴포넌트, 테스트 및 SCSS 모듈에 한국어 역할 주석을 추가했습니다.
+- Vite 설정, HTML 진입점, GitHub Actions 배포 설정에도 파일 책임 주석을 추가했습니다.
+- `npm test`: 테스트 파일 1개, 테스트 1개 통과
+- `npm run build`: 프로덕션 빌드 성공
+- 기존 Sass `@import` 문법의 Dart Sass 3.0 제거 예정 경고는 계속 남아 있습니다.

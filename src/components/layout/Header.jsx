@@ -1,4 +1,5 @@
 import React from "react";
+// 로고와 주요 페이지 이동 메뉴를 포함한 공통 헤더입니다.
 import { Link } from "react-router-dom";
 
 function Header(props) {
